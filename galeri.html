@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Bimas Buddha</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        /* Gaya dasar agar seragam dengan halaman lainnya */
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background-color: #f4f4f4; }
+        header { background: #ff9500; color: white; padding: 20px; text-align: center; }
+        nav { background: #333; display: flex; justify-content: center; }
+        nav a { color: white; padding: 14px 20px; text-decoration: none; font-weight: bold; }
+        nav a:hover { background: #555; }
+
+        /* Kotak Putih Utama */
+        .container { 
+            max-width: 1000px; 
+            margin: 40px auto; 
+            padding: 30px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+        }
+        h2 { color: #d4af37; text-align: center; margin-top: 0; }
+        
+        /* Gaya Grid Galeri */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            background: #fff;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* Agar foto tidak lonjong */
+            display: block;
+        }
+
+        .gallery-item p {
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <img src="logo-kemenag.png" alt="Logo Kemenag">
+    <h1>Bimas Keagamaan Buddha</h1>
+</header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="profil.html">Profil</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="pendaftaran.html">Pendaftaran</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <h2>Galeri Kegiatan</h2>
+        <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 25px;">
+        
+        <div class="gallery-item">
+    <a href="vihara1.jpeg" target="_blank">
+        <img src="vihara1.jpeg" alt="Vihara Dharmayana">
+    </a>
+    <p>Vihara Dharmayana</p>
+</div>
+
+    <div class="gallery-item">
+    <a href="vihara2.jpeg" target="_blank">
+        <img src="vihara2.jpeg" alt="Kegiatan Umat">
+    </a>
+    <p>Kegiatan Umat</p>
+</div>
+</div>
+
+           
+
+            </div>
+    </div>
+<a href="#" id="backToTop" title="Ke Atas">▲</a>
+</body>
+</html>

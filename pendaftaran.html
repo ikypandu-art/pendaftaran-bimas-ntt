@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran - Bimas Buddha</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    
+    <style>
+        /* CSS untuk tampilan dasar */
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background-color: #f4f4f4; }
+        
+        /* Gaya Header */
+        header { background: #ff9500; color: white; padding: 20px; text-align: center; }
+        
+        /* Gaya Navigasi agar tombol berjajar */
+        nav { background: #333; display: flex; justify-content: center; sticky: top; }
+        nav a { color: white; padding: 14px 20px; text-decoration: none; font-weight: bold; }
+        nav a:hover { background: #555; }
+
+        /* Gaya Formulir */
+        .container { max-width: 600px; margin: 30px auto; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h2 { color: #d4af37; text-align: center; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background-color: #ff9500; color: white; border: none; padding: 12px; width: 100%; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: bold; }
+        button:hover { background-color: #e68600; }
+    </style>
+</head>
+<body>
+
+    <header>
+    <img src="logo-kemenag.png" alt="Logo Kemenag">
+    <h1>Bimas Keagamaan Buddha</h1>
+</header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="profil.html">Profil</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="pendaftaran.html">Pendaftaran</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <h2>Formulir Pendaftaran</h2>
+        <form action="https://api.sheetmonkey.io/form/cv3zK87bqJyUQnzusVbgx1" method="post" onsubmit="alert('Terimakasih! Data pendaftaran Anda telah berhasil dikirim ke Bimas Buddha NTT.');">
+    <div class="form-group">
+        <label>Nama Lengkap:</label>
+        <input type="text" name="Nama Lengkap" required placeholder="Nama sesuai KTP"> </div>
+
+    <div class="form-group">
+        <label>Nomor WhatsApp:</label>
+        <input type="tel" name="Nomor WhatsApp" required placeholder="0812..."> </div>
+
+    <div class="form-group">
+        <label>Keperluan:</label>
+        <select name="Keperluan"> <option>Pendataan Umat</option>
+            <option>Legalisir Dokumen</option>
+            <option>Penyuluhan</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Keterangan:</label>
+        <textarea name="Keterangan" rows="4" placeholder="Isi pesan Anda..."></textarea> </div>
+
+    <button type="submit" style="background-color: #ff9500; color: white; padding: 12px; border: none; border-radius: 5px; cursor: pointer; width: 100%; font-weight: bold; margin-top: 20px;">
+        Kirim Data
+    </button>
+</form></button>
+        </form>
+    </div>
+<a href="#" id="backToTop" title="Ke Atas">▲</a>
+</body>
+</html>
