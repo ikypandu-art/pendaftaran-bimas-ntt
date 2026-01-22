@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Bimas Buddha</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        /* Gaya dasar agar seragam dengan profil */
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background-color: #f4f4f4; }
+        header { background: #ff9500; color: white; padding: 20px; text-align: center; }
+        nav { background: #333; display: flex; justify-content: center; }
+        nav a { color: white; padding: 14px 20px; text-decoration: none; font-weight: bold; }
+        nav a:hover { background: #555; }
+
+        /* Kotak Putih Tengah */
+        .container { 
+            max-width: 900px; 
+            margin: 40px auto; 
+            padding: 30px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+        }
+        h2 { color: #d4af37; text-align: center; margin-top: 0; }
+        
+        /* Layout kolom untuk info dan peta */
+        .kontak-wrapper { display: flex; flex-wrap: wrap; gap: 30px; margin-top: 20px; }
+        .info-kontak { flex: 1; min-width: 300px; }
+        .peta-lokasi { flex: 1.2; min-width: 300px; }
+        
+        .info-item { margin-bottom: 20px; }
+        .info-item strong { color: #ff9500; display: block; margin-bottom: 5px; }
+        
+        iframe { border-radius: 8px; border: 1px solid #ddd; width: 100%; height: 300px; }
+    </style>
+</head>
+<body>
+
+    <header>
+    <img src="logo-kemenag.png" alt="Logo Kemenag">
+    <h1>Bimas Keagamaan Buddha</h1>
+</header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="profil.html">Profil</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="pendaftaran.html">Pendaftaran</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <h2>Hubungi Kami</h2>
+        <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 25px;">
+        
+        <div class="kontak-wrapper">
+            <div class="info-kontak">
+                <div class="info-item">
+                    <strong>Alamat:</strong>
+                    Kantor Wilayah Kementerian Agama NTT<br>
+                    Jl. Frans Seda, Kupang, NTT
+                </div>
+                <div class="info-item">
+                    <strong>WhatsApp:</strong>
+                    <a href="https://wa.me/628123456789" style="color: #25d366; text-decoration: none; font-weight: bold;">+62 812-3456-789</a>
+                </div>
+                <div class="info-item">
+                    <strong>Email:</strong><br>
+                    bimasbuddha.ntt@kemenag.go.id
+                </div>
+                <div class="info-item">
+                    <strong>Jam Operasional:</strong><br>
+                    Senin - Jumat: 08.00 - 16.00 WITA
+                </div>
+            </div>
+
+            <div class="peta-lokasi">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.1896245195045!2d123.6190563!3d-10.1651512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c569b3713f01b17%3A0xe54d89a72175a07c!2sKanwil%20Kemenag%20Provinsi%20NTT!5e0!3m2!1sid!2sid!4v1700000000000" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
