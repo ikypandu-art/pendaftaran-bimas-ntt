@@ -14,7 +14,13 @@
         header { background: #ff9500; color: white; padding: 20px; text-align: center; }
         
         /* Gaya Navigasi agar tombol berjajar */
-        nav { background: #333; display: flex; justify-content: center; sticky: top; }
+        nav { background: #333; 
+  display: flex; 
+  justify-content: center; 
+  position: -webkit-sticky; /* Untuk browser Safari */
+  position: sticky; 
+  top: 0; 
+  z-index: 1000; }
         nav a { color: white; padding: 14px 20px; text-decoration: none; font-weight: bold; }
         nav a:hover { background: #555; }
 
@@ -26,6 +32,21 @@
         input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
         button { background-color: #ff9500; color: white; border: none; padding: 12px; width: 100%; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: bold; }
         button:hover { background-color: #e68600; }
+
+        /* Membuat logo menyesuaikan lebar layar */
+img {
+    max-width: 100%; /* Gambar tidak akan lebih lebar dari layar HP */
+    height: auto;    /* Menjaga bentuk logo agar tidak gepeng */
+    display: block;
+    margin: 0 auto;  /* Membuat logo berada di tengah */
+}
+
+/* Mengatur ukuran logo khusus untuk HP agar pas (tidak terlalu besar) */
+@media (max-width: 600px) {
+    img {
+        width: 150px; /* Anda bisa mengganti angka ini (misal 120px atau 180px) sesuai selera */
+    }
+}
     </style>
 </head>
 <body>
