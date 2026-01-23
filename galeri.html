@@ -7,11 +7,24 @@
     <link rel="stylesheet" href="CSS/style.css">
     <style>
         /* Gaya dasar agar seragam dengan halaman lainnya */
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background-color: #f4f4f4; }
-        header img { max-width: 150px; /* Ukuran logo di HP agar tidak kebesaran */
+        body { 
+    font-family: 'Segoe UI', Tahoma, sans-serif; 
+    margin: 0; 
+    background-color: #f4f4f4; 
+} /* Pastikan ada tanda tutup kurung ini */
+
+header {
+    background-color: #ff9500;
+    padding: 20px;
+    text-align: center;
+}
+
+header img { 
+    width: 150px; /* Gunakan width agar pasti mengecil */
     height: auto;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+}
         nav { background: #333; display: flex; justify-content: center; }
         nav a { color: white; padding: 14px 20px; text-decoration: none; font-weight: bold; }
         nav a:hover { background: #555; }
