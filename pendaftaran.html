@@ -41,17 +41,30 @@
         button:hover { background-color: #e68600; }
 
         /* Membuat logo menyesuaikan lebar layar */
-img {
-    max-width: 100%; /* Gambar tidak akan lebih lebar dari layar HP */
-    height: auto;    /* Menjaga bentuk logo agar tidak gepeng */
-    display: block;
-    margin: 0 auto;  /* Membuat logo berada di tengah */
+header img {
+    width: 80px; /* Angka ini akan membuat logo lebih kecil dan pas */
+    height: auto;
+    margin-right: 15px; /* Memberikan jarak yang manis ke tulisan */
 }
 
 /* Mengatur ukuran logo khusus untuk HP agar pas (tidak terlalu besar) */
 @media (max-width: 600px) {
-    img {
-        width: 150px; /* Anda bisa mengganti angka ini (misal 120px atau 180px) sesuai selera */
+    header {
+        display: flex; /* Sejajarkan ke samping */
+        align-items: center; /* Rata tengah vertikal */
+        justify-content: flex-start; /* Mepet ke kiri */
+        padding: 10px;
+    }
+
+    header img {
+        width: 80px; /* Samakan dengan angka di atas agar ukurannya tetap */
+        margin-right: 10px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 18px;
+        text-align: left;
     }
 }
     </style>
